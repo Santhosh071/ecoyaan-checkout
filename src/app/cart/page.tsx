@@ -2,7 +2,7 @@ import { CartData } from "@/context/CheckoutContext";
 import CartPageClient from "./CartPageClient";
 
 async function getCartData(): Promise<CartData> {
-  const res = await fetch("http://localhost:3000/api/cart", {
+  const res = await fetch("https://ecoyaan-checkout-delta.vercel.app/cart", {
     cache: "no-store",
   });
 
